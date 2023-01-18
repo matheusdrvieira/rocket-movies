@@ -16,37 +16,37 @@ height:100vh;
 
         margin-bottom:40px;
 
-    >h2{
-        font-size:32px;       
-        font-weight: 400;
-    }
-
-    >button{
-        width:207px;
-        height:48px;
-
-        align-items:center;
-        display:flex;
-        justify-content:center;
-
-        >svg{
-            margin-right:5px;
+        >h2{
+            font-size:32px;       
+            font-weight: 400;
         }
-    }
+
+        >button{
+            width:207px;
+            height:48px;
+
+            align-items:center;
+            display:flex;
+            justify-content:center;
+
+            >svg{
+                margin-right:5px;
+            }
+        }
     }
 
     >section{
         height:650px;
         overflow-y:auto;
 
-    ::-webkit-scrollbar {
-        width: 8px;
-    }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
 
-    ::-webkit-scrollbar-thumb {
-        background:${({ theme }) => theme.COLORS.ROSA};
-        border-radius: 10px;
-    }
+        ::-webkit-scrollbar-thumb {
+            background:${({ theme }) => theme.COLORS.ROSA};
+            border-radius: 10px;
+        }
     }
 }
 `;
