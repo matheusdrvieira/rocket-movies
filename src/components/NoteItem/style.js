@@ -15,6 +15,10 @@ export const Container = styled.div`
     >button{
         background:none;
         border:none;
+
+        >svg{
+            color:${({ theme }) => theme.COLORS.ROSA};
+        }
     }
 
     >input{

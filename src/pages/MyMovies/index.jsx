@@ -23,7 +23,6 @@ export function MyMovies() {
                             { id: "1", name: "Ficção Científica" },
                             { id: "2", name: "Drama" },
                             { id: "3", name: "Família" }
-
                         ]
                     }} />
                 </section>

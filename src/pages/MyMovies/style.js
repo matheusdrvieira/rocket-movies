@@ -6,7 +6,7 @@ width:100%;
 height:100vh;
 
 >main{
-    padding:0 106px;
+    padding:0 126px;
     margin-top:50px;
     
     >div{
