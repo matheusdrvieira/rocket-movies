@@ -19,7 +19,7 @@ height:100vh;
 
 export const Form = styled.form`
 max-width:340px;
-margin:30px auto 0;
+margin:30px auto;
 
     >div{
         margin-bottom:8px;
@@ -39,7 +39,7 @@ width:186px;
 height:186px;
 
 position:relative;
-margin:-124px auto 32px;
+margin:-124px auto;
 
 >img{
     width:186px;
@@ -72,7 +72,7 @@ margin:-124px auto 32px;
     }
     
     >svg{
-        color:${({ theme }) => theme.COLORS.BLACK};
+        color:${({ theme }) => theme.COLORS.BLACK};    
     }
 }
 `;
