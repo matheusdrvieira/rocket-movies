@@ -5,7 +5,7 @@ import { Input } from "../Input";
 export function Header() {
     return (
         < Container>
-            <LogoText>RocketMovies</LogoText>
+            <LogoText to="/home">RocketMovies</LogoText>
             <Input type="text" placeholder="Pesquisar pelo título" icon={RiSearch2Line} />
             <Profile>
                 <div>
