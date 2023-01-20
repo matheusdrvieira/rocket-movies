@@ -7,12 +7,12 @@ import { RiAddLine } from "react-icons/ri"
 
 export function MyMovies() {
     return (
-        <Container>
+        <Container to="/Details/:id">
             <Header />
             <main>
                 <div>
                     <h2>Meus filmes </h2>
-                    <Button title="Adicionar filme" icon={RiAddLine} />
+                    <Button to="/new" title="Adicionar filme" icon={RiAddLine} />
                 </div>
                 <section>
                     <Notes data={{

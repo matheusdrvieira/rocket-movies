@@ -4,7 +4,6 @@ export const Container = styled.button`
    width:100%;
    
    background-color:${({ theme }) => theme.COLORS.BACKGROUND_500};
-   
 
    border:none;
    border-radius:10px;
@@ -13,33 +12,33 @@ export const Container = styled.button`
    padding:22px;
    margin-bottom:16px;
 
-   >h1{
-    flex:1;
-    
-    margin-bottom:15px;
+      >h1{
+      flex:1;
+      
+      margin-bottom:15px;
 
-    font-weight:700;
-    font-size:24px;
+      font-weight:700;
+      font-size:24px;
 
-    color:${({ theme }) => theme.COLORS.WHITE};
-   }
+      color:${({ theme }) => theme.COLORS.WHITE};
+      }
 
-   >p{
-    font-family: 'Roboto';
-    font-weight:400;
-    font-size:16px;
+      >p{
+      font-family: 'Roboto';
+      font-weight:400;
+      font-size:16px;
 
-    text-align:left;
-    line-height: 19px;
+      text-align:left;
+      line-height: 19px;
 
-    margin-top:15px;
+      margin-top:15px;
 
-    color:${({ theme }) => theme.COLORS.GRAY_100};
-   }
+      color:${({ theme }) => theme.COLORS.GRAY_100};
+      }
 
-   >footer{
-    width:100%;
-    display:flex;
-    margin-top:24px;
-   }
+      >footer{
+      width:100%;
+      display:flex;
+      margin-top:24px;
+      }
 `;

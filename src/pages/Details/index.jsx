@@ -9,7 +9,7 @@ export function Details() {
   return (
     <Container>
       <Header />
-      <ButtonText id="buttonText" title="Voltar" icon={FiArrowLeft} />
+      <ButtonText id="buttonText" title="Voltar" icon={FiArrowLeft} to="/home" />
 
       <div>
         <Note data={{

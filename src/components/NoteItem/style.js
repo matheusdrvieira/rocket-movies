@@ -16,9 +16,9 @@ export const Container = styled.div`
         background:none;
         border:none;
 
-        >svg{
-            color:${({ theme }) => theme.COLORS.ROSA};
-        }
+            >svg{
+                color:${({ theme }) => theme.COLORS.ROSA};
+            }
     }
 
     >input{
@@ -31,8 +31,8 @@ export const Container = styled.div`
         background:transparent;
         color:${({ theme }) => theme.COLORS.WHITE};
 
-        &::placeholder{
-            color:${({ theme }) => theme.COLORS.GRAY_200};
-        }
+            &::placeholder{
+                color:${({ theme }) => theme.COLORS.GRAY_200};
+            }
     }
 `;

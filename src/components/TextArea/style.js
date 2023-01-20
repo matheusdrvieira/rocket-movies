@@ -12,8 +12,7 @@ export const Container = styled.textarea`
    color:${({ theme }) => theme.COLORS.WHITE};
    background:${({ theme }) => theme.COLORS.BACKGROUND_800};
 
-   &::placeholder{
-    color:${({ theme }) => theme.COLORS.GRAY_300};
-   }
-   
+      &::placeholder{
+      color:${({ theme }) => theme.COLORS.GRAY_300};
+      }
 `;

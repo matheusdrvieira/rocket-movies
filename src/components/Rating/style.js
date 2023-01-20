@@ -9,9 +9,9 @@ export const Container = styled.span`
    
       color:${({ theme }) => theme.COLORS.WHITE};
 
-      >svg{
-        margin-right:2px;
+        >svg{
+          margin-right:2px;
 
-        color:${({ theme }) => theme.COLORS.ROSA};
-      }
+          color:${({ theme }) => theme.COLORS.ROSA};
+        }
 `;

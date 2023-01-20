@@ -8,30 +8,30 @@ export const Container = styled.div`
    padding:0 123px;
    margin-bottom:16px;
         
-   >div {
-      display:flex;
-      gap:20px;
-      align-items:baseline;
-      margin-bottom:24px;
+      >div {
+         display:flex;
+         gap:20px;
+         align-items:baseline;
+         margin-bottom:24px;
 
-      >span{
-         span{           
-            display:flex;
-            gap:10px;
+         >span{
+            span{           
+               display:flex;
+               gap:10px;
 
-            svg{
-               font-size:20px;
+               svg{
+                  font-size:20px;
+               }
             }
          }
-      }
 
-      >h1{
-       font-weight:700;
-       font-size:36px;
-   
-       color:${({ theme }) => theme.COLORS.WHITE};
+         >h1{
+         font-weight:700;
+         font-size:36px;
+      
+         color:${({ theme }) => theme.COLORS.WHITE};
+         }
       }
-   }
 
    div:nth-child(2){
       display:flex;

@@ -13,19 +13,21 @@ export function New() {
             <Header />
             <main>
                 <section>
-                    <ButtonText title="Voltar" icon={FiArrowLeft} />
+                    <ButtonText to="/home" title="Voltar" icon={FiArrowLeft} />
                     <h2>Novo filme </h2>
+
                     <div>
                         <Input type="text" placeholder="Título" />
                         <Input type="number" placeholder="Sua nota (de 0 a 5)" min="0" max="5" />
                     </div>
+
                     <TextArea placeholder="Observações" />
+
                     <h3>Marcadores</h3>
 
                     <div id="noteItem">
                         <NoteItem value="react" />
                         <NoteItem isNew placeholder="Novo marcador" />
-
                     </div>
 
                     <div id="buttons">

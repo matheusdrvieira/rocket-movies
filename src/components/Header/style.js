@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.header`
     width:100%;
@@ -7,8 +8,6 @@ export const Container = styled.header`
     display:flex;
     align-items:center;
     justify-content:space-between;
-
-    grid-area:header;
     
     padding:0 123px;
 
@@ -16,12 +15,9 @@ export const Container = styled.header`
     border-bottom-style:solid;
     border-bottom-color: ${({ theme }) => theme.COLORS.BACKGROUND_600};
 
-    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
-    color: ${({ theme }) => theme.COLORS.ROSA};
-
-    div:nth-child(2){
-       width:630px;
-    }
+        div:nth-child(2){
+        width:630px;
+        }
 `;
 
 export const Profile = styled.div`
@@ -29,24 +25,34 @@ export const Profile = styled.div`
     gap:10px;
     align-items:center;
   
-    >img{
-        width:64px;
-        height:64px;
-
-        border-radius:50%;
-    } 
-    div:nth-child(1){
-        display:flex;
-        flex-direction:column;
-        align-items:end;
-
-        color: ${({ theme }) => theme.COLORS.WHITE};
-
-        >button{
-            border:none;
-            background:none;
-
-            color: ${({ theme }) => theme.COLORS.GRAY_200};
+        div:nth-child(1){
+            display:flex;
+            flex-direction:column;
+            align-items:end;
         }
-    }
+`;
+
+export const LogoText = styled(Link)`
+    font-weight: 700;
+    font-size: 24px;
+    
+    color: ${({ theme }) => theme.COLORS.ROSA};
+`;
+
+export const TextUser = styled(Link)`
+   color: ${({ theme }) => theme.COLORS.WHITE};
+`;
+
+export const ImgUser = styled(Link)`
+
+    >img{
+            width:64px;
+            height:64px;
+
+            border-radius:50%;
+        } 
+`;
+
+export const ButtonTextExit = styled(Link)`
+    color: ${({ theme }) => theme.COLORS.GRAY_200};
 `;
