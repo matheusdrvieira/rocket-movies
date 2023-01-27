@@ -41,7 +41,7 @@ height:100vh;
             color: ${({ theme }) => theme.COLORS.GRAY_100};
         }
 
-        #noteItem{
+        #movieTag{
             display:flex;
             justify-content:flex-start;
             flex-wrap:wrap;

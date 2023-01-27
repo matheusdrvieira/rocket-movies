@@ -5,7 +5,7 @@ import { Input } from "../..//components/Input"
 import { TextArea } from "../..//components/TextArea"
 import { FiArrowLeft } from "react-icons/fi"
 import { Button } from "../../components/Button";
-import { NoteItem } from "../../components/NoteItem";
+import { MovieTag } from "../../components/MovieTag";
 
 export function New() {
     return (
@@ -13,7 +13,7 @@ export function New() {
             <Header />
             <main>
                 <section>
-                    <ButtonText to="/home" title="Voltar" icon={FiArrowLeft} />
+                    <ButtonText to="/" title="Voltar" icon={FiArrowLeft} />
                     <h2>Novo filme </h2>
 
                     <div>
@@ -25,9 +25,9 @@ export function New() {
 
                     <h3>Marcadores</h3>
 
-                    <div id="noteItem">
-                        <NoteItem value="react" />
-                        <NoteItem isNew placeholder="Novo marcador" />
+                    <div id="movieTag">
+                        <MovieTag value="react" />
+                        <MovieTag isNew placeholder="Novo marcador" />
                     </div>
 
                     <div id="buttons">

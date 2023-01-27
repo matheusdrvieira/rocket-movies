@@ -1,7 +1,7 @@
 import { Container } from "./style";
 import { Header } from "../../components/Header";
 import { ButtonText } from "../../components/ButtonText";
-import { Note } from "../../components/Note";
+import { Movie } from "../../components/Movie";
 
 import { FiArrowLeft } from "react-icons/fi";
 
@@ -9,10 +9,10 @@ export function Details() {
   return (
     <Container>
       <Header />
-      <ButtonText id="buttonText" title="Voltar" icon={FiArrowLeft} to="/home" />
+      <ButtonText id="buttonText" title="Voltar" icon={FiArrowLeft} to="/" />
 
       <div>
-        <Note data={{
+        <Movie data={{
           title: "Interrestelar",
           rating: 3,
           date: new Date().toISOString(),

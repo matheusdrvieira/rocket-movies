@@ -4,8 +4,7 @@ import { Rating } from "../Rating";
 import { RiTimer2Line } from "react-icons/ri";
 import { format, toDate } from "date-fns";
 
-
-export function Note({ data, ...rest }) {
+export function Movie({ data, ...rest }) {
 
     let formattedDate = format(toDate(Date.parse(data.date)), `dd/MM/yyyy 'às' H:mm`);
 
