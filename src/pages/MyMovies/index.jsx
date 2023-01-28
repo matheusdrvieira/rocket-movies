@@ -3,28 +3,50 @@ import { Header } from "../../components/Header";
 import { Button } from "../../components/Button";
 import { Movies } from "../../components/Movies"
 import { RiAddLine } from "react-icons/ri"
+import { useState, useEffect } from "react";
+import { useAuth } from "../../hooks/auth";
+import { api } from "../../services/api";
+
 
 
 export function MyMovies() {
+    const { user } = useAuth();
+    const [search, setSearch] = useState("");
+    const [movies, setMovies] = useState([]);
+
+    const handleCallback = search => {
+        setSearch(search)
+    }
+
+    useEffect(() => {
+        async function fetchMovies() {
+            const response = await api.get(`/movies?user_id=${user.id}&title=${search}`)
+        }
+        const a = [{ id: 1, title: "titulo 1" }, { id: 2, title: "titulo 2" }]
+        setMovies(a)
+
+        fetchMovies()
+    }, [search]);
+
+
     return (
         <Container>
-            <Header />
+            <Header handleCallback={handleCallback} />
             <main>
                 <div>
                     <h2>Meus filmes </h2>
                     <Button to="/new" title="Adicionar filme" icon={RiAddLine} />
                 </div>
                 <section>
-                    <Movies data={{
-                        title: "Interrestelar",
-                        rating: 3,
-                        content: "Pragas nas colheitas fizeram a civilização humana regredir para uma sociedade agrária em futuro de data desconhecida. Cooper, ex-piloto da NASA, tem uma fazenda com sua família. Murphy, a filha de dez anos de Cooper, acredita que seu quarto está assombrado por um fantasma que tenta se comunicar com ela. Pai e filha descobrem que o fantasma é uma inteligência desconhecida que está enviando mensagens codificadas através de radiação gravitacional, deixando coordenadas em binário que os levam até uma instalação secreta da NASA liderada pelo professor John Brand...",
-                        tags: [
-                            { id: "1", name: "Ficção Científica" },
-                            { id: "2", name: "Drama" },
-                            { id: "3", name: "Família" }
-                        ]
-                    }} />
+
+                    {
+                        movies.map(movie => {
+
+                            <p>{movie}</p>
+                        })
+                    }
+
+
                 </section>
             </main>
         </Container >

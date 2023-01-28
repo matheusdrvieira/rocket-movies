@@ -2,10 +2,10 @@ import { useState } from "react";
 import { Container, Form, Avatar } from "./style";
 import { ButtonText } from "../../components/ButtonText"
 import { Input } from "../..//components/Input"
-import { FiArrowLeft, FiUser, FiMail, FiLock, FiCamera } from "react-icons/fi"
+import { FiArrowLeft, FiUser, FiMail, FiLock, FiCamera } from "react-icons/fi";
 import { Button } from "../../components/Button";
 import { useAuth } from "../../hooks/auth";
-import avatarPlaceholder from "../../assets/avatar_placeholder.svg"
+import avatarPlaceholder from "../../assets/avatar_placeholder.svg";
 import { api } from "../../services/api";
 
 export function Profile() {
