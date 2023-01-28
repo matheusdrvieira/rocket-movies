@@ -5,16 +5,24 @@ import { useAuth } from "../../hooks/auth";
 import { api } from "../../services/api";
 import avatarPlaceholder from "../../assets/avatar_placeholder.svg";
 import { useEffect, useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 export function Header({ handleCallback }) {
     const { signOut, user } = useAuth();
     const [search, setSearch] = useState("");
+
+    const navigate = useNavigate();
+    const location = useLocation();
 
     useEffect(() => {
 
         if (handleCallback != null) {
             handleCallback(search)
         }
+
+        //if (search.length && location.pathname != "/") {
+        //navigate(`/?search=${search}`)
+        // }
 
     }, [search]);
 

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export function Movies({ data, ...rest }) {
     return (
-        <Link to="/details/:id">
+        <Link to={`/details/${data.id}`}>
             < Container {...rest}>
                 <h1>{data.title}</h1>
 
@@ -16,7 +16,7 @@ export function Movies({ data, ...rest }) {
                     </span>
                 }
 
-                <p>{data.content}</p>
+                <p>{data.description ? data.description : "Nenhuma descricao disponivel"}</p>
 
                 {
                     data.tags &&
